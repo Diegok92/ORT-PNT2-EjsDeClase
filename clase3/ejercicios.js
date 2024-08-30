@@ -79,3 +79,40 @@ for (let i = 0; i < simpsons.length; i++) {
 	}
 }
 console.log(simpsonsEstudiantes);
+//No logre hacerlo con map y destructuring
+
+/*
+Ejercicio 5: Agregar personajes con spread
+
+Crear un nuevo array de objetos con más personajes de Los Simpsons. Utilizar el 
+operador spread para combinar ambos arrays de personajes en un nuevo array. 
+Mostrar el array resultante en la consola
+*/
+
+let simpsonsExtendido = [
+	{
+		nombre: "abe",
+		edad: 80,
+		rol: "Abuelo",
+	},
+	{
+		nombre: "patty",
+		edad: 40,
+		rol: "Tia",
+	},
+	{
+		nombre: "Selma",
+		edad: 40,
+		rol: "Tia",
+	},
+	{
+		nombre: "Herbert",
+		edad: 35,
+		rol: "Tio",
+	},
+];
+
+let fliaSimpsonCompleta = { ...simpsons, ...simpsonsExtendido };
+
+console.log("Ejercicio 5:");
+console.log(fliaSimpsonCompleta);
