@@ -49,3 +49,14 @@ creado en el Ejercicio 1. Mostrar el resultado en la consola.
 */
 
 console.log(simpsons.reduce((acc, personaje) => acc + personaje.edad, 0));
+
+/*
+Ejercicio 3: Obtener los nombres de los personajes
+
+Utilizar el método  map  y una función arrow para crear un nuevo array que contenga 
+solamente los nombres de los personajes del array del Ejercicio 1. Mostrar el nuevo 
+array en la consola
+*/
+
+let nombresSimpsons = simpsons.map((e) => e.nombre);
+console.log(nombresSimpsons);
