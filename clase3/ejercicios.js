@@ -40,3 +40,12 @@ let simpsons = [
 ];
 
 console.log(simpsons.filter((e) => e.edad < 18));
+
+/*
+Ejercicio 2: Sumar edades de los personajes
+
+Utilizar el método  reduce  para sumar las edades de todos los personajes del array 
+creado en el Ejercicio 1. Mostrar el resultado en la consola.
+*/
+
+console.log(simpsons.reduce((acc, personaje) => acc + personaje.edad, 0));
