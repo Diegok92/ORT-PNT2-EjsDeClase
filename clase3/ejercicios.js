@@ -38,7 +38,7 @@ let simpsons = [
 		rol: "mellizo malvado",
 	},
 ];
-
+console.log("Ejercicio 1:");
 console.log(simpsons.filter((e) => e.edad < 18));
 
 /*
@@ -47,7 +47,7 @@ Ejercicio 2: Sumar edades de los personajes
 Utilizar el método  reduce  para sumar las edades de todos los personajes del array 
 creado en el Ejercicio 1. Mostrar el resultado en la consola.
 */
-
+console.log("Ejercicio 2:");
 console.log(simpsons.reduce((acc, personaje) => acc + personaje.edad, 0));
 
 /*
@@ -57,6 +57,25 @@ Utilizar el método  map  y una función arrow para crear un nuevo array que con
 solamente los nombres de los personajes del array del Ejercicio 1. Mostrar el nuevo 
 array en la consola
 */
-
+console.log("Ejercicio 3:");
 let nombresSimpsons = simpsons.map((e) => e.nombre);
 console.log(nombresSimpsons);
+
+/*
+Ejercicio 4: Cambiar el rol de los personajes
+
+Utilizar el método  map  y destructuring para crear un nuevo array a partir del array 
+del Ejercicio 1, en el cual el rol de los personajes menores de edad sea cambiado a 
+"Estudiante". Mostrar el nuevo array en la consola
+*/
+
+console.log("Ejercicio 4:");
+
+let simpsonsEstudiantes = simpsons;
+
+for (let i = 0; i < simpsons.length; i++) {
+	if (simpsons[i].edad < 18) {
+		simpsonsEstudiantes[i].rol = "Estudiante";
+	}
+}
+console.log(simpsonsEstudiantes);
